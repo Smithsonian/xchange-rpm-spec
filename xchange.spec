@@ -1,8 +1,8 @@
-%global upstream_version	1.0.0-rc1
+%global upstream_version	1.0.0-rc2
 
 Name:			xchange
-Version:		1.0.0.rc1
-Release:		1%{?dist}
+Version:		1.0.0.rc2
+Release:		%autorelease
 Summary:		Light-weight structured data exchange and JSON support for C/C++
 License:		Unlicense
 URL:			https://smithsonian.github.io/xchange
