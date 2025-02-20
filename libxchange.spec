@@ -62,7 +62,7 @@ make DESTDIR=%{buildroot} libdir=%{_libdir} install
 %files
 %license LICENSE
 %doc CHANGELOG.md
-%{_libdir}/lib%{name}.so.1{,.*}
+%{_libdir}/%{name}.so.1{,.*}
 
 %files devel
 %doc CONTRIBUTING.md
