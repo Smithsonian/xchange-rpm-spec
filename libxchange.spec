@@ -59,6 +59,10 @@ make test
 
 make DESTDIR=%{buildroot} libdir=%{_libdir} install
 
+# Reflect name change in package doc dir name
+# (xchange -> libxchange for Fedora packaging purposes)
+mv %{buildroot}/%{_docdir}/xchange %{buildroot}/%{_docdir}/libxchange
+
 %files
 %license LICENSE
 %doc CHANGELOG.md
@@ -71,7 +75,7 @@ make DESTDIR=%{buildroot} libdir=%{_libdir} install
 %{_libdir}/*.so
 
 %files doc
-%doc %{_docdir}/%{name}/%{name}.tag
+%doc %{_docdir}/%{name}/xchange.tag
 %doc %{_docdir}/%{name}/html
 
 %changelog
