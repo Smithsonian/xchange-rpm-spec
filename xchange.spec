@@ -1,7 +1,7 @@
-%global upstream_version	1.0.0-rc2
+%global upstream_version	1.0.0-rc3
 
 Name:			xchange
-Version:		1.0.0.rc2
+Version:		1.0.0.rc3
 Release:		%autorelease
 Summary:		Light-weight structured data exchange and JSON support for C/C++
 License:		Unlicense
