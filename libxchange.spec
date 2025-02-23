@@ -31,18 +31,10 @@ Summary:		C development files for the xchange C/C++ library
 Requires:		%{name}%{_isa} = %{version}-%{release}
 
 %description devel
-This sub-package provides C headers and non-versioned shared library symbolic 
-links for the xchange C/C++ library.
+This sub-package provides C headers and the non-versioned shared library 
+symbolic links for the xchange C/C++ library. It also includes API 
+documentation in HTML format, which may be used with the Eclipse IDE also.
 
-
-%package doc
-Summary:		Documentation for the xchange C/C++ astronomy library
-BuildArch:		noarch
-Requires:		%{name} = %{version}-%{release}
-
-%description doc
-This package provides man pages and HTML documentation for the xchange C/C++ 
-library.
 
 %prep
 %setup -q -n xchange-%{upstream_version}
@@ -73,10 +65,6 @@ mv %{buildroot}/%{_docdir}/xchange %{buildroot}/%{_docdir}/libxchange
 %doc %{_docdir}/%{name}/*
 %{_prefix}/include/*
 %{_libdir}/*.so
-
-%files doc
-%doc %{_docdir}/%{name}/xchange.tag
-%doc %{_docdir}/%{name}/html
 
 %changelog
 %autochangelog
