@@ -72,6 +72,7 @@ mv %{buildroot}/%{_docdir}/xchange %{buildroot}/%{_docdir}/libxchange
 %{_libdir}/*.so
 
 %files doc
+%license LICENSE
 %dir %{_docdir}/%{name}
 %doc %{_docdir}/%{name}/xchange.tag
 %doc %{_docdir}/%{name}/html
