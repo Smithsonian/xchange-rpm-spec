@@ -1,7 +1,7 @@
-%global upstream_version	1.0.0-rc3
+%global upstream_version	1.0.0-rc4
 
 Name:			libxchange
-Version:		1.0.0.rc3
+Version:		1.0.0.rc4
 Release:		%autorelease
 Summary:		Structured data representation and JSON support for C/C++
 License:		Unlicense
@@ -31,8 +31,8 @@ Summary:		Documentation for the xchange C/C++ astronomy library
 BuildArch:		noarch
 
 %description doc
-This package provides man pages and HTML documentation for the xchange C/C++ 
-library. It can also be used as documentation for the Eclipse IDE.
+This package provides HTML documentation for the xchange C/C++ library. It can 
+also be used as documentation for the Eclipse IDE.
 
 %prep
 %setup -q -n xchange-%{upstream_version}
