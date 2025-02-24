@@ -14,7 +14,7 @@ BuildRequires:		doxygen >= 1.9.0
 %description
 
 The xchange library provides a free framework for structured data 
-reprensetation in C/C++ (C99 or later), and includes JSON parsing and 
+representation in C/C++ (C99 or later), and includes JSON parsing and 
 emitting functions. It is free to use, in any way you like, without 
 licensing restrictions.
 
