@@ -68,6 +68,7 @@ mv %{buildroot}/%{_docdir}/xchange %{buildroot}/%{_docdir}/%{name}
 %dir %{_docdir}/%{name}
 %doc %{_docdir}/%{name}/xchange.tag
 %doc %{_docdir}/%{name}/html
+%doc %{_docdir}/%{name}/example*.c
 
 %changelog
 %autochangelog
