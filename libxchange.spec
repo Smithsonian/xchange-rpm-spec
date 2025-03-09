@@ -31,8 +31,8 @@ Summary:		Documentation for the xchange C/C++ astronomy library
 BuildArch:		noarch
 
 %description doc
-This package provides HTML documentation for the xchange C/C++ library. It can 
-also be used as documentation for the Eclipse IDE.
+This package provides HTML documentation and examples for the xchange C/C++ 
+library. The HTML API documentation can also be used with the Eclipse IDE.
 
 %prep
 %setup -q -n xchange-%{upstream_version}
@@ -60,7 +60,7 @@ mv %{buildroot}/%{_docdir}/xchange %{buildroot}/%{_docdir}/%{name}
 
 %files devel
 %doc CONTRIBUTING.md
-%{_prefix}/include/*
+%{_includedir}/*
 %{_libdir}/*.so
 
 %files doc
