@@ -27,7 +27,7 @@ This sub-package provides C headers and non-versioned shared library symbolic
 links for the xchange C/C++ library.
 
 %package doc
-Summary:		Documentation for the xchange C/C++ astronomy library
+Summary:		Documentation for the xchange C/C++ library
 BuildArch:		noarch
 
 %description doc
@@ -61,7 +61,7 @@ mv %{buildroot}/%{_docdir}/xchange %{buildroot}/%{_docdir}/%{name}
 %files devel
 %doc CONTRIBUTING.md
 %{_includedir}/*
-%{_libdir}/*.so
+%{_libdir}/libxchange.so
 
 %files doc
 %license LICENSE
