@@ -1,4 +1,4 @@
-[![Copr build status](https://copr.fedorainfracloud.org/coprs/attipaci/supernovas/package/xchange/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/attipaci/supernovas/package/xchange/)
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/attipaci/xchange/package/libxchange/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/attipaci/xchange/package/libxchange/)
 
 This repository contains `.spec` file for creating RPM packages for the xchange C/C++ structured data framework library.
 
