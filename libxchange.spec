@@ -35,7 +35,7 @@ This package provides HTML documentation and examples for the xchange C/C++
 library. The HTML API documentation can also be used with the Eclipse IDE.
 
 %prep
-%autosetup
+%setup -q -n xchange-%{upstream_version}
 
 %build
 
