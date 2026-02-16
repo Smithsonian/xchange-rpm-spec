@@ -5,11 +5,11 @@ Version:                1.1.0
 Release:                %autorelease
 Summary:                Structured data representation and JSON support for C/C++
 License:                Unlicense
-URL:                    https://smithsonian.github.io/xchange
-Source0:                https://github.com/Smithsonian/xchange/archive/refs/tags/v%{upstream_version}.tar.gz
+URL:                    https://sigmyne.github.io/xchange
+Source0:                https://github.com/Sigmyne/xchange/archive/refs/tags/v%{upstream_version}.tar.gz
 BuildRequires:          gcc
 BuildRequires:          sed
-BuildRequires:          doxygen >= 1.9.0
+BuildRequires:          doxygen >= 1.13.0
 
 %description
 
@@ -35,24 +35,24 @@ This package provides HTML documentation and examples for the xchange C/C++
 library. The HTML API documentation can also be used with the Eclipse IDE.
 
 %prep
-%setup -q -n xchange-%{upstream_version}
+%autosetup
 
 %build
 
-make %{?_smp_mflags}
+%make_build
+
+%install
+
+%make_install PACKAGE_NAME=%{name} libdir=%{_libdir}
 
 %check
 
 make test
 
-%install
-
-make PACKAGE_NAME=%{name} DESTDIR=%{buildroot} libdir=%{_libdir} install
-
 %files
 %license LICENSE
 %doc CHANGELOG.md
-%{_libdir}/%{name}.so.1{,.*}
+%{_libdir}/libxchange.so.1{,.*}
 
 %files devel
 %{_includedir}/*
